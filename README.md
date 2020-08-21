@@ -1,4 +1,4 @@
-# 原仓库地址https://github.com/J-D-K/JKSM
+# <a href="https://github.com/J-D-K/JKSM">原仓库地址</a>
 
 # 更新内容
 * 增加简体中文（需要<a href="https://github.com/dnasdw/SharedFontTool/releases/tag/v3.1">字库</a>支持）
