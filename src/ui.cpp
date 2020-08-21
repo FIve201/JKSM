@@ -61,9 +61,9 @@ namespace ui
 
     void prepMenus()
     {
-        mainMenu.addOpt("应用", 0);
-        mainMenu.addOpt("系统应用", 0);
-        mainMenu.addOpt("共享额外数据", 0);
+        mainMenu.addOpt("Titles", 0);
+        mainMenu.addOpt("系统Titles", 0);
+        mainMenu.addOpt("共享追加数据", 0);
         mainMenu.addOpt("重新加载应用列表", 0);
         mainMenu.addOpt("修改游戏币", 0);
         mainMenu.addOpt("退出", 0);
@@ -74,13 +74,13 @@ namespace ui
 
         backupMenu.addOpt("保存存档", 0);
         backupMenu.addOpt("删除保存存档", 0);
-        backupMenu.addOpt("额外数据", 0);
-        backupMenu.addOpt("删除额外数据", 0);
+        backupMenu.addOpt("追加数据", 0);
+        backupMenu.addOpt("删除追加数据", 0);
         backupMenu.addOpt("返回", 0);
 
         nandBackupMenu.addOpt("系统存档", 0);
-        nandBackupMenu.addOpt("额外数据", 0);
-        nandBackupMenu.addOpt("BOSS额外数据", 0);
+        nandBackupMenu.addOpt("追加数据", 0);
+        nandBackupMenu.addOpt("BOSS追加数据", 0);
         nandBackupMenu.addOpt("返回", 0);
 
         sharedMenu.addOpt("E0000000", 0);
@@ -147,7 +147,7 @@ namespace ui
 
         gfx::frameBegin();
         gfx::frameStartTop();
-        drawTopBar("JKSM - 简体中文汉化版 更新时间：8月19日");
+        drawTopBar("JKSM - 简体中文汉化版");
         mainMenu.draw(40, 78, 0xFFFFFFFF, 320, false);
         gfx::frameStartBot();
         gfx::frameEnd();
@@ -331,14 +331,14 @@ namespace ui
 
                 case 3:
                     {
-                        std::string confStr = "您确定要删除'" + util::toUtf8(data::curData.getTitle()) + "'的额外保存数据吗？";
+                        std::string confStr = "您确定要删除'" + util::toUtf8(data::curData.getTitle()) + "'的追加保存数据吗？";
                         if(confirm(confStr))
                         {
                             FS_ExtSaveDataInfo del = { MEDIATYPE_SD, 0, 0, data::curData.getExtData(), 0 };
 
                             Result res = FSUSER_DeleteExtSaveData(del);
                             if(R_SUCCEEDED(res))
-                                showMessage("额外的保存数据已删除。");
+                                showMessage("追加保存数据已删除。");
                         }
                     }
                     break;
@@ -462,7 +462,7 @@ namespace ui
                 else if(held & KEY_R)
                     newFolder = util::toUtf16(util::getDateString(util::DATE_FMT_YMD));
                 else
-                    newFolder = util::safeString(util::toUtf16(util::getString("Enter a new folder name", true)));
+                    newFolder = util::safeString(util::toUtf16(util::getString("输入新文件夹名称", true)));
 
                 if(!newFolder.empty())
                 {
@@ -688,7 +688,7 @@ namespace ui
 
         gfx::frameBegin();
         gfx::frameStartTop();
-        drawTopBar("额外数据");
+        drawTopBar("追加数据");
         sharedMenu.draw(40, 60, 0xFFFFFFFF, 320, false);
         gfx::frameStartBot();
         gfx::drawTextWrap(sharedDesc[sharedMenu.getSelected()], 0, 0, 240, 0xFFFFFFFF);

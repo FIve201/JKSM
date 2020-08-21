@@ -213,7 +213,7 @@ namespace data
         }
 
         char tmp[64];
-        sprintf(tmp, "储存位置: %s\n代码前置: 0x%08X\n游戏代码: 0x%08X", media.c_str(), (unsigned)getHigh(), (unsigned)getLow());
+        sprintf(tmp, "储存位置: %s\n软件类型: 0x%08X\n代码: 0x%08X", media.c_str(), (unsigned)getHigh(), (unsigned)getLow());
         gfx::drawText(tmp, x, y, 0xFFFFFFFF);
     }
 
