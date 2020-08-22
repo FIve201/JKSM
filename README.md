@@ -1,7 +1,7 @@
 # <a href="https://github.com/J-D-K/JKSM">原仓库地址</a>，源码由<a href="https://github.com/J-D-K/JKSM/commits?author=J-D-K">J-D-K</a>提供
 
 # 更新内容
-* 增加简体中文（需要<a href="https://github.com/dnasdw/SharedFontTool/releases/tag/v3.1">字库</a>支持）
+* 增加简体中文（需要<a href="https://github.com/dnasdw/SharedFontTool/releases/tag/v3.1">字库</a>支持或者<a href="https://tieba.baidu.com/p/6802255931">简体中文补丁</a>）
 * 增加<a href="https://github.com/Rintim/JKSM-i18n-zh-tw">繁体中文</a>（无需字库）
 
 # JKSM特性
