@@ -2,6 +2,7 @@
 
 # 更新内容
 * 增加简体中文（需要<a href="https://github.com/dnasdw/SharedFontTool/releases/tag/v3.1">字库</a>支持）
+* 增加<a href="https://github.com/Rintim/JKSM-i18n-zh-tw">繁体中文</a>（无需字库）
 
 # JKSM特性
 JKSM or JK's Save Manager for 3DS.
