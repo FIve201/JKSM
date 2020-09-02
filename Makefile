@@ -41,8 +41,8 @@ INCLUDES	:=	inc inc/ui
 #GFXBUILD	:=	$(ROMFS)/gfx
 ROMFS		:=  romfs
 APP_TITLE   := JKSM
-APP_AUTHOR  := JK
-APP_DESCRIPTION := 3DS Save Manager
+APP_AUTHOR  := JK&FIve201
+APP_DESCRIPTION := 3DS存档管理器
 
 #---------------------------------------------------------------------------------
 # options for code generation
