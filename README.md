@@ -5,7 +5,7 @@
 * 增加简体中文（需要<a href="https://github.com/dnasdw/SharedFontTool/releases/tag/v3.1">字库</a>支持或者<a href="https://tieba.baidu.com/p/6802255931">简体中文补丁</a>）
 * 增加<a href="https://github.com/Rintim/JKSM-i18n-zh-tw">繁体中文</a>（无需字库）
 
-# JKSM特性
+# JKSM功能
 JKSM or JK's Save Manager for 3DS.
 * Dump and Restore save data for 3DS titles
 * Dump and Restore extra data for 3DS titles
